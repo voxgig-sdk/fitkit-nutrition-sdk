@@ -1,0 +1,43 @@
+# Entity: sitewebmanifest
+
+main: kit: entity: sitewebmanifest: {
+
+  alias: field: {}
+
+  name: "sitewebmanifest"
+  op: {
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /site.webmanifest"
+            source: "openapi3"
+            version: 2
+          }
+          m: "GET"
+          o: "/site.webmanifest"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "site.webmanifest"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+  fields: {
+  }
+
+
+
+}

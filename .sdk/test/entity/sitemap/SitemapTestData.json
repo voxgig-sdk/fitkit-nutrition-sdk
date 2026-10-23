@@ -1,0 +1,27 @@
+{
+  "existing": {
+    "sitemap": {
+      "SITEMAP00": {
+        "id": "SITEMAP00"
+      },
+      "SITEMAP01": {
+        "id": "SITEMAP01"
+      },
+      "SITEMAP02": {
+        "id": "SITEMAP02"
+      }
+    }
+  },
+  "new": {
+    "sitemap": {
+      "sitemap_ref01": {}
+    }
+  },
+  "requests": {
+    "GET /sitemap.xml": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+# Entity: robot
+
+main: kit: entity: robot: {
+
+  alias: field: {}
+
+  name: "robot"
+  op: {
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /robots.txt"
+            source: "openapi3"
+            version: 2
+          }
+          m: "GET"
+          o: "/robots.txt"
+          rs: {
+            kind: "raw"
+            media: "text/plain"
+          }
+          s: [
+            {
+              lit: "robots.txt"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+  fields: {
+  }
+
+
+
+}

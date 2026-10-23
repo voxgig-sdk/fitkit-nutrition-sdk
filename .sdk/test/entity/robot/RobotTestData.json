@@ -1,0 +1,27 @@
+{
+  "existing": {
+    "robot": {
+      "ROBOT00": {
+        "id": "ROBOT00"
+      },
+      "ROBOT01": {
+        "id": "ROBOT01"
+      },
+      "ROBOT02": {
+        "id": "ROBOT02"
+      }
+    }
+  },
+  "new": {
+    "robot": {
+      "robot_ref01": {}
+    }
+  },
+  "requests": {
+    "GET /robots.txt": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

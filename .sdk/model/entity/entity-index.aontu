@@ -1,0 +1,8 @@
+# Entity Models
+
+@"./healthz.aontu"
+@"./home_get.aontu"
+@"./robot.aontu"
+@"./sitemap.aontu"
+@"./sitewebmanifest.aontu"
+@"./static_asset_asset_get.aontu"

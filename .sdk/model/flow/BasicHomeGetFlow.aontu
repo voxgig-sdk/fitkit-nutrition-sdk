@@ -1,0 +1,28 @@
+# BasicHomeGetFlow
+
+main: kit: flow: BasicHomeGetFlow:
+{
+  entity: "home_get",
+  kind: "basic",
+  name: "BasicHomeGetFlow",
+  step: [
+    {
+      i: {
+        ref: "home_get_ref01",
+        srcdatavar: "home_get_ref01_data",
+        suffix: "_dt0"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-home_get_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicHomeGetFlow"
+}

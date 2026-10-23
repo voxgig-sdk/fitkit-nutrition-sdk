@@ -1,0 +1,38 @@
+# Entity: home_get
+
+main: kit: entity: home_get: {
+
+  alias: field: {}
+
+  name: "home_get"
+  op: {
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /"
+            source: "openapi3"
+            version: 2
+          }
+          m: "GET"
+          o: "/"
+          rs: {
+            kind: "raw"
+            media: "text/html"
+          }
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+  fields: {
+  }
+
+
+
+}

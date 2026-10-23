@@ -1,0 +1,43 @@
+# Entity: sitemap
+
+main: kit: entity: sitemap: {
+
+  alias: field: {}
+
+  name: "sitemap"
+  op: {
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /sitemap.xml"
+            source: "openapi3"
+            version: 2
+          }
+          m: "GET"
+          o: "/sitemap.xml"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "sitemap.xml"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+  fields: {
+  }
+
+
+
+}

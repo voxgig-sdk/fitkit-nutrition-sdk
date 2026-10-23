@@ -1,0 +1,27 @@
+{
+  "existing": {
+    "sitewebmanifest": {
+      "SITEWEBMANIFEST00": {
+        "id": "SITEWEBMANIFEST00"
+      },
+      "SITEWEBMANIFEST01": {
+        "id": "SITEWEBMANIFEST01"
+      },
+      "SITEWEBMANIFEST02": {
+        "id": "SITEWEBMANIFEST02"
+      }
+    }
+  },
+  "new": {
+    "sitewebmanifest": {
+      "sitewebmanifest_ref01": {}
+    }
+  },
+  "requests": {
+    "GET /site.webmanifest": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

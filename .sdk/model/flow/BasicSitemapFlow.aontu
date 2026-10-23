@@ -1,0 +1,28 @@
+# BasicSitemapFlow
+
+main: kit: flow: BasicSitemapFlow:
+{
+  entity: "sitemap",
+  kind: "basic",
+  name: "BasicSitemapFlow",
+  step: [
+    {
+      i: {
+        ref: "sitemap_ref01",
+        srcdatavar: "sitemap_ref01_data",
+        suffix: "_dt0"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-sitemap_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicSitemapFlow"
+}

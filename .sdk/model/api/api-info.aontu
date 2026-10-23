@@ -1,0 +1,21 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      auth: false
+      description: "The Smeltworks API."
+      servers: [
+        {
+          description: "Production server"
+          url: "https://smeltworks.com"
+        }
+      ]
+      title: "Smeltworks"
+      version: "0.1.0"
+      website: "https://smeltworks.com"
+    }
+  }
+}
+

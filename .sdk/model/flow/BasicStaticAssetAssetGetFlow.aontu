@@ -1,0 +1,32 @@
+# BasicStaticAssetAssetGetFlow
+
+main: kit: flow: BasicStaticAssetAssetGetFlow:
+{
+  entity: "static_asset_asset_get",
+  kind: "basic",
+  name: "BasicStaticAssetAssetGetFlow",
+  step: [
+    {
+      i: {
+        ref: "static_asset_asset_get_ref01",
+        srcdatavar: "static_asset_asset_get_ref01_data",
+        suffix: "_dt0"
+      }
+
+      m: {
+        id: "static_asset_asset_get01"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-static_asset_asset_get_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicStaticAssetAssetGetFlow"
+}

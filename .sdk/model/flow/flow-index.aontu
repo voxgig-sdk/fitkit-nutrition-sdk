@@ -1,0 +1,8 @@
+# Flows
+
+@"./BasicHealthzFlow.aontu"
+@"./BasicHomeGetFlow.aontu"
+@"./BasicRobotFlow.aontu"
+@"./BasicSitemapFlow.aontu"
+@"./BasicSitewebmanifestFlow.aontu"
+@"./BasicStaticAssetAssetGetFlow.aontu"

@@ -1,0 +1,72 @@
+<?php
+declare(strict_types=1);
+
+// FitkitNutrition SDK utility registration
+
+require_once __DIR__ . '/../core/UtilityType.php';
+require_once __DIR__ . '/Clean.php';
+require_once __DIR__ . '/Done.php';
+require_once __DIR__ . '/MakeError.php';
+require_once __DIR__ . '/FeatureAdd.php';
+require_once __DIR__ . '/FeatureHook.php';
+require_once __DIR__ . '/FeatureInit.php';
+require_once __DIR__ . '/Fetcher.php';
+require_once __DIR__ . '/MakeFetchDef.php';
+require_once __DIR__ . '/MakeContext.php';
+require_once __DIR__ . '/MakeOptions.php';
+require_once __DIR__ . '/MakeRequest.php';
+require_once __DIR__ . '/MakeResponse.php';
+require_once __DIR__ . '/MakeResult.php';
+require_once __DIR__ . '/MakePoint.php';
+require_once __DIR__ . '/MakeSpec.php';
+require_once __DIR__ . '/MakeUrl.php';
+require_once __DIR__ . '/Param.php';
+require_once __DIR__ . '/PrepareAuth.php';
+require_once __DIR__ . '/PrepareBody.php';
+require_once __DIR__ . '/Graphql.php';
+require_once __DIR__ . '/PrepareHeaders.php';
+require_once __DIR__ . '/PrepareMethod.php';
+require_once __DIR__ . '/PrepareParams.php';
+require_once __DIR__ . '/PreparePath.php';
+require_once __DIR__ . '/PrepareQuery.php';
+require_once __DIR__ . '/ResultBasic.php';
+require_once __DIR__ . '/ResultBody.php';
+require_once __DIR__ . '/ResultHeaders.php';
+require_once __DIR__ . '/TransformRequest.php';
+require_once __DIR__ . '/TransformResponse.php';
+
+FitkitNutritionUtility::setRegistrar(function (FitkitNutritionUtility $u): void {
+    $u->clean = [FitkitNutritionClean::class, 'call'];
+    $u->clean_add = [FitkitNutritionClean::class, 'add'];
+    $u->clean_explain = [FitkitNutritionDone::class, 'clean_explain'];
+    $u->done = [FitkitNutritionDone::class, 'call'];
+    $u->make_error = [FitkitNutritionMakeError::class, 'call'];
+    $u->feature_add = [FitkitNutritionFeatureAdd::class, 'call'];
+    $u->feature_hook = [FitkitNutritionFeatureHook::class, 'call'];
+    $u->feature_init = [FitkitNutritionFeatureInit::class, 'call'];
+    $u->fetcher = [FitkitNutritionFetcher::class, 'call'];
+    $u->make_fetch_def = [FitkitNutritionMakeFetchDef::class, 'call'];
+    $u->make_context = [FitkitNutritionMakeContext::class, 'call'];
+    $u->make_options = [FitkitNutritionMakeOptions::class, 'call'];
+    $u->make_request = [FitkitNutritionMakeRequest::class, 'call'];
+    $u->make_response = [FitkitNutritionMakeResponse::class, 'call'];
+    $u->make_result = [FitkitNutritionMakeResult::class, 'call'];
+    $u->make_point = [FitkitNutritionMakePoint::class, 'call'];
+    $u->make_spec = [FitkitNutritionMakeSpec::class, 'call'];
+    $u->make_url = [FitkitNutritionMakeUrl::class, 'call'];
+    $u->param = [FitkitNutritionParam::class, 'call'];
+    $u->prepare_auth = [FitkitNutritionPrepareAuth::class, 'call'];
+    $u->prepare_body = [FitkitNutritionPrepareBody::class, 'call'];
+    $u->prepare_headers = [FitkitNutritionPrepareHeaders::class, 'call'];
+    $u->prepare_method = [FitkitNutritionPrepareMethod::class, 'call'];
+    $u->prepare_params = [FitkitNutritionPrepareParams::class, 'call'];
+    $u->prepare_path = [FitkitNutritionPreparePath::class, 'call'];
+    $u->prepare_query = [FitkitNutritionPrepareQuery::class, 'call'];
+    $u->graphql_body = [FitkitNutritionGraphql::class, 'body'];
+    $u->graphql_errors = [FitkitNutritionGraphql::class, 'errors'];
+    $u->result_basic = [FitkitNutritionResultBasic::class, 'call'];
+    $u->result_body = [FitkitNutritionResultBody::class, 'call'];
+    $u->result_headers = [FitkitNutritionResultHeaders::class, 'call'];
+    $u->transform_request = [FitkitNutritionTransformRequest::class, 'call'];
+    $u->transform_response = [FitkitNutritionTransformResponse::class, 'call'];
+});

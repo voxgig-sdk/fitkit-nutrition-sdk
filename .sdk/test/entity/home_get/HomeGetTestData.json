@@ -1,0 +1,27 @@
+{
+  "existing": {
+    "home_get": {
+      "HOME_GET00": {
+        "id": "HOME_GET00"
+      },
+      "HOME_GET01": {
+        "id": "HOME_GET01"
+      },
+      "HOME_GET02": {
+        "id": "HOME_GET02"
+      }
+    }
+  },
+  "new": {
+    "home_get": {
+      "home_get_ref01": {}
+    }
+  },
+  "requests": {
+    "GET /": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

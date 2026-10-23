@@ -1,0 +1,28 @@
+# BasicSitewebmanifestFlow
+
+main: kit: flow: BasicSitewebmanifestFlow:
+{
+  entity: "sitewebmanifest",
+  kind: "basic",
+  name: "BasicSitewebmanifestFlow",
+  step: [
+    {
+      i: {
+        ref: "sitewebmanifest_ref01",
+        srcdatavar: "sitewebmanifest_ref01_data",
+        suffix: "_dt0"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-sitewebmanifest_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicSitewebmanifestFlow"
+}

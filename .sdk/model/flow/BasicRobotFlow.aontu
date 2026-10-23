@@ -1,0 +1,28 @@
+# BasicRobotFlow
+
+main: kit: flow: BasicRobotFlow:
+{
+  entity: "robot",
+  kind: "basic",
+  name: "BasicRobotFlow",
+  step: [
+    {
+      i: {
+        ref: "robot_ref01",
+        srcdatavar: "robot_ref01_data",
+        suffix: "_dt0"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-robot_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicRobotFlow"
+}

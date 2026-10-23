@@ -1,0 +1,27 @@
+{
+  "existing": {
+    "static_asset_asset_get": {
+      "STATIC_ASSET_ASSET_GET00": {
+        "id": "STATIC_ASSET_ASSET_GET00"
+      },
+      "STATIC_ASSET_ASSET_GET01": {
+        "id": "STATIC_ASSET_ASSET_GET01"
+      },
+      "STATIC_ASSET_ASSET_GET02": {
+        "id": "STATIC_ASSET_ASSET_GET02"
+      }
+    }
+  },
+  "new": {
+    "static_asset_asset_get": {
+      "static_asset_asset_get_ref01": {}
+    }
+  },
+  "requests": {
+    "GET /{asset}": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

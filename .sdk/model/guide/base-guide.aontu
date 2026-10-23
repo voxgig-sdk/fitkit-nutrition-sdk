@@ -1,0 +1,48 @@
+# Generated from the API definition and overwritten on every build: do not
+# edit this file. Put customizations in the guide entry file, which includes
+# this one and overrides its defaults:
+#   guide.aontu
+
+guide: {
+  metrics: count: entity: 6
+  metrics: count: path: 6
+  metrics: count: method: 6
+
+  entity: healthz: {
+    path: "/healthz": {
+      op: load: method: *GET
+    }
+  }
+
+  entity: home_get: {
+    path: "/": {
+      op: load: method: *GET
+    }
+  }
+
+  entity: robot: {
+    path: "/robots.txt": {
+      op: load: method: *GET
+    }
+  }
+
+  entity: sitemap: {
+    path: "/sitemap.xml": {
+      op: load: method: *GET
+    }
+  }
+
+  entity: sitewebmanifest: {
+    path: "/site.webmanifest": {
+      op: load: method: *GET
+    }
+  }
+
+  entity: static_asset_asset_get: {
+    path: "/{asset}": {
+      rename: param: "asset": *"id"
+      op: load: method: *GET
+    }
+  }
+
+}

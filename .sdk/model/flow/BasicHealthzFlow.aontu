@@ -1,0 +1,28 @@
+# BasicHealthzFlow
+
+main: kit: flow: BasicHealthzFlow:
+{
+  entity: "healthz",
+  kind: "basic",
+  name: "BasicHealthzFlow",
+  step: [
+    {
+      i: {
+        ref: "healthz_ref01",
+        srcdatavar: "healthz_ref01_data",
+        suffix: "_dt0"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-healthz_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicHealthzFlow"
+}
